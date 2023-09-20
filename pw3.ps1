@@ -1,5 +1,7 @@
-$date=Read-Host "Enter date:"
-$month=Read-Host "Enter Month:"
-$year=Read-Host "Enter year:"
-$DOB = "{0:D2}-{1:D2}-{2-D4}" -f $date, $month, $year
-Write-Host "Date of Birth: $DOB"
+$date = Read-Host "Enter date: "
+$month = Read-Host "Enter Month: "
+$year = Read-Host "Enter year: "
+
+if ($day -match '^\d{1,2}$' -and $month -match '^d{1,2}$' -and $year -match '^\d{4}$') {
+    $dob = Get-Date 
+}

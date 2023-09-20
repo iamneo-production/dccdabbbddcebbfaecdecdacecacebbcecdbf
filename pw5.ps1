@@ -18,4 +18,4 @@ New-Item -ItemType Directory -Path $subFolder2 -Force
     New-Item -ItemType File -Path $filePath -Force
 }
 
-Write-Host ""
+Write-Host "Folder Structure and test files are created"

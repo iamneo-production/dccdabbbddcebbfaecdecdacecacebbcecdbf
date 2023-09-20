@@ -1,3 +1,4 @@
+New-Item file.txt
 $filePath = "/home/code/project/workspace/file.txt"
 
 $textContent = @"
@@ -5,4 +6,4 @@ Welecome to powershell scripting
 "@
 
 $textContent | Set-Content -Path $filePath
-Wri
+Write-Host "Text has been inserted"
